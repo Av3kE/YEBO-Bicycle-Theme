@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #f7f7f7;
   font-family: "Lato", sans-serif;
   color: rgb(53, 55, 56);
 }
@@ -17,39 +17,69 @@ body .wrapper {
 body .wrapper .header {
   width: 100%;
   height: 100vh;
+  background: url(img/header-bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 body .wrapper .header nav {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 22;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 3.5rem 0;
+  padding: 3rem 0;
 }
 body .wrapper .header nav .nav-a {
   color: rgb(53, 55, 56);
   margin: 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+body .wrapper .header nav .nav-a img[alt=logo] {
+  display: block;
+  margin: 0 6rem;
+  width: 125px;
+}
 body .wrapper .header nav .nav-a:hover {
   color: rgb(100, 194, 158);
-  transition: all 0, 3s;
+  transition: color 0.3s;
 }
 body .wrapper .header nav .nav-a:nth-child(1)::after {
   content: ".";
-  margin-left: 4rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
-body .wrapper .header img {
-  max-width: 100%;
-  display: block;
-  position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
+body .wrapper .header nav .nav-a:nth-child(4)::after {
+  content: ".";
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+body .wrapper .main {
+  width: 100%;
+}
+body .wrapper .main .new-generation-vbike {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 9% 0;
+}
+body .wrapper .main .new-generation-vbike img {
+  margin-bottom: 5%;
+}
+body .wrapper .main .new-generation-vbike h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #353738;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+body .wrapper .main .new-generation-vbike p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #848789;
 }/*# sourceMappingURL=style.css.map */
