@@ -1,83 +1,153 @@
 * {
     box-sizing: border-box;
 }
-body {
-    background-color: #f7f7f7;
-    font-family: "Lato", sans-serif;
-    color: rgb(53, 55, 56);
-    .wrapper {
-        min-height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        .header {
+html {
+    font-size: 62.5%;
+
+    body {
+        background-color: #f7f7f7;
+        font-family: "Lato", sans-serif;
+        color: rgb(53, 55, 56);
+        .wrapper {
+            min-height: 100%;
             width: 100%;
-            height: 100vh;
-            background: url(img/header-bg.jpg) no-repeat center center;
-            background-size: cover;
-            nav {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            .header {
                 width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                padding: 3rem 0;
-                .nav-a {
-                    color: rgb(53, 55, 56);
-                    margin: 0;
-                    text-decoration: none;
-                    font-size: 1.3rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    img[alt="logo"] {
-                        display: block;
-                        margin: 0 6rem;
-                        width:125px;
-                    }
-                    &:hover {
-                        color: rgb(100, 194, 158);
-                        transition: color 0.3s;
-                    }
-                    &:nth-child(1)::after {
-                        content: ".";
-                        margin-left: 3.5rem;
-                        margin-right: 3.5rem;
-                    }
-                    &:nth-child(4)::after {
-                        content: ".";
-                        margin-left: 3.5rem;
-                        margin-right: 3.5rem;
+                height: 100vh;
+                background: url(img/header-bg.jpg) no-repeat center center;
+                background-size: cover;
+                nav {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3rem 0;
+                    .nav-a {
+                        color: rgb(53, 55, 56);
+                        margin: 0;
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        img[alt="logo"] {
+                            display: block;
+                            margin: 0 12rem;
+                            width: 100px;
+                        }
+                        &:hover {
+                            color: rgb(100, 194, 158);
+                            transition: color 0.3s;
+                        }
+                        &:nth-child(1)::after {
+                            content: ".";
+                            margin-left: 4rem;
+                            margin-right: 4rem;
+                        }
+                        &:nth-child(4)::after {
+                            content: ".";
+                            margin-left: 4rem;
+                            margin-right: 4rem;
+                        }
                     }
                 }
             }
-        }
-        .main {
-            width: 100%;
+            .main {
+                width: 100%;
 
-            .new-generation-vbike {
-                width: 75%;
-                margin: 0 auto;
-                text-align: center;
-                padding: 9% 0;
-                img {
-                    margin-bottom: 5%;
+                .new-generation-vbike {
+                    width: 75%;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 7% 0;
+                    img {
+                        margin-bottom: 5%;
+                    }
+                    h2 {
+                        font-family: "Lato", sans-serif;
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        letter-spacing: 2px;
+                        color: #353738;
+                        text-transform: uppercase;
+                        margin-bottom: 5%;
+                    }
+                    p {
+                        font-family: "Lato", sans-serif;
+                        font-size: 2rem;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        letter-spacing: 0.2px;
+                        color: #848789;
+                    }
                 }
-                h2 {
-                    font-family: "Lato", sans-serif;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                    letter-spacing: 2px;
-                    color: #353738;
-                    text-transform: uppercase;
-                    margin-bottom: 5%;
-                }
-                p {
-                    font-family: "Lato", sans-serif;
-                    font-size: 1.3rem;
-                    line-height: 1.8;
-                    font-weight: 400;
-                    color: #848789;
+                .bike-review-item {
+                    max-width: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    background: #ffffff;
+                    height: 1049px;
+                    .oliva-bike {
+                        width: 70%;
+                        img {
+                            display: block;
+                            max-width: 100%;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .oliva-bike + div {
+                        width: 30%;
+
+                        .bike-rvw-description {
+                            width: 100%;
+                            text-align: center;
+                            height: 60%;
+                            padding: 5rem 7rem;
+                            img {
+                                margin-bottom: 10%;
+                            }
+                            h2 {
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                                letter-spacing: 2px;
+                                text-transform: uppercase;
+                                margin-bottom: 7%;
+                            }
+                            p {
+                                display: block;
+                                font-size: 2rem;
+                                text-align: justify;
+                                color: #848789;
+                                word-spacing: 1px;
+                                margin-bottom: 5%;
+                                line-height: 4rem;
+
+                            }
+                            hr {
+                                height: 2px;
+                                width: 5rem;
+                                border: none;
+                                background: #000;
+                            }
+                        }
+                        .oliva-bike-second-img {
+                            height: 40%;
+                            img {
+                                display: block;
+                                max-width: 100%;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -2,25 +2,28 @@
   box-sizing: border-box;
 }
 
-body {
+html {
+  font-size: 62.5%;
+}
+html body {
   background-color: #f7f7f7;
   font-family: "Lato", sans-serif;
   color: rgb(53, 55, 56);
 }
-body .wrapper {
+html body .wrapper {
   min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-body .wrapper .header {
+html body .wrapper .header {
   width: 100%;
   height: 100vh;
   background: url(img/header-bg.jpg) no-repeat center center;
   background-size: cover;
 }
-body .wrapper .header nav {
+html body .wrapper .header nav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -28,58 +31,124 @@ body .wrapper .header nav {
   align-items: center;
   padding: 3rem 0;
 }
-body .wrapper .header nav .nav-a {
+html body .wrapper .header nav .nav-a {
   color: rgb(53, 55, 56);
   margin: 0;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
-body .wrapper .header nav .nav-a img[alt=logo] {
+html body .wrapper .header nav .nav-a img[alt=logo] {
   display: block;
-  margin: 0 6rem;
-  width: 125px;
+  margin: 0 12rem;
+  width: 100px;
 }
-body .wrapper .header nav .nav-a:hover {
+html body .wrapper .header nav .nav-a:hover {
   color: rgb(100, 194, 158);
   transition: color 0.3s;
 }
-body .wrapper .header nav .nav-a:nth-child(1)::after {
+html body .wrapper .header nav .nav-a:nth-child(1)::after {
   content: ".";
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-body .wrapper .header nav .nav-a:nth-child(4)::after {
+html body .wrapper .header nav .nav-a:nth-child(4)::after {
   content: ".";
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-body .wrapper .main {
+html body .wrapper .main {
   width: 100%;
 }
-body .wrapper .main .new-generation-vbike {
+html body .wrapper .main .new-generation-vbike {
   width: 75%;
   margin: 0 auto;
   text-align: center;
-  padding: 9% 0;
+  padding: 7% 0;
 }
-body .wrapper .main .new-generation-vbike img {
+html body .wrapper .main .new-generation-vbike img {
   margin-bottom: 5%;
 }
-body .wrapper .main .new-generation-vbike h2 {
+html body .wrapper .main .new-generation-vbike h2 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
   color: #353738;
   text-transform: uppercase;
   margin-bottom: 5%;
 }
-body .wrapper .main .new-generation-vbike p {
+html body .wrapper .main .new-generation-vbike p {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.8;
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.2px;
   color: #848789;
+}
+html body .wrapper .main .bike-review-item {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  height: 1049px;
+}
+html body .wrapper .main .bike-review-item .oliva-bike {
+  width: 70%;
+}
+html body .wrapper .main .bike-review-item .oliva-bike img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div {
+  width: 30%;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .bike-rvw-description {
+  width: 100%;
+  text-align: center;
+  height: 60%;
+  padding: 5rem 7rem;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .bike-rvw-description img {
+  margin-bottom: 10%;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .bike-rvw-description h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 7%;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .bike-rvw-description p {
+  display: block;
+  font-size: 2rem;
+  text-align: justify;
+  color: #848789;
+  word-spacing: 1px;
+  margin-bottom: 5%;
+  line-height: 4rem;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .bike-rvw-description hr {
+  height: 2px;
+  width: 5rem;
+  border: none;
+  background: #000;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .oliva-bike-second-img {
+  height: 40%;
+}
+html body .wrapper .main .bike-review-item .oliva-bike + div .oliva-bike-second-img img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
