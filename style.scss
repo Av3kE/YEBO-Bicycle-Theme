@@ -78,8 +78,8 @@ html {
                     }
                     p {
                         font-family: "Lato", sans-serif;
-                        font-size: 2rem;
-                        line-height: 1.5;
+                        font-size: 1.6rem;
+                        line-height: 3rem;
                         font-weight: 400;
                         letter-spacing: 0.2px;
                         color: #848789;
@@ -92,8 +92,23 @@ html {
                     flex-direction: row;
                     background: #ffffff;
                     height: 1049px;
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: column;
+                        height: unset;
+                    }
+
                     .oliva-bike {
                         width: 70%;
+
+                        @media screen and (max-width: 1237px) {
+                            width: 50%;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            width: 100%;
+                        }
+
                         img {
                             display: block;
                             max-width: 100%;
@@ -102,16 +117,36 @@ html {
                             object-fit: cover;
                         }
                     }
-                    .oliva-bike + div {
+                    .div-right-part,
+                    .div-left-part {
                         width: 30%;
+                        @media screen and (max-width: 1237px) {
+                            width: 50%;
+                        }
+                        @media screen and (max-width: 600px) {
+                            width: 100%;
+                        }
 
                         .bike-rvw-description {
                             width: 100%;
-                            text-align: center;
                             height: 60%;
                             padding: 5rem 7rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            @media screen and (max-width: 1348px) {
+                                padding: 7rem;
+                            }
+                            @media screen and (max-width: 826px) {
+                                padding: 10%;
+                            }
+                            @media screen and (max-width: 600px) {
+                                height: unset;
+                            }
                             img {
                                 margin-bottom: 10%;
+                                width: 41px;
                             }
                             h2 {
                                 font-size: 2.5rem;
@@ -119,6 +154,10 @@ html {
                                 letter-spacing: 2px;
                                 text-transform: uppercase;
                                 margin-bottom: 7%;
+                                @media screen and (max-width: 1636px) {
+                                    font-size: 2rem;
+                                    letter-spacing: 1px;
+                                }
                             }
                             p {
                                 display: block;
@@ -127,8 +166,20 @@ html {
                                 color: #848789;
                                 word-spacing: 1px;
                                 margin-bottom: 5%;
-                                line-height: 4rem;
+                                line-height: 3rem;
 
+                                @media screen and (max-width: 1636px) {
+                                    font-size: 1.6rem;
+                                }
+
+                                @media screen and (max-width: 1348px) {
+                                    font-size: 2rem;
+                                    line-height: 2.5rem;
+                                }
+
+                                @media screen and (max-width: 826px) {
+                                    font-size: 1.7rem;
+                                }
                             }
                             hr {
                                 height: 2px;
@@ -139,6 +190,10 @@ html {
                         }
                         .oliva-bike-second-img {
                             height: 40%;
+                            width: 100%;
+                            @media screen and (max-width: 600px) {
+                                height: unset;
+                            }
                             img {
                                 display: block;
                                 max-width: 100%;
