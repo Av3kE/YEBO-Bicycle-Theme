@@ -188,7 +188,12 @@ html body .wrapper .main .bike-review .grid-rvw-item .big-bike-pic-little-img {
   grid-column: 2;
 }
 html body .wrapper .main .bike-review .grid-rvw-item .big-bike-pic-little-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 1161px) {
   html body .wrapper .main .bike-review .grid-rvw-item {
@@ -201,6 +206,9 @@ html body .wrapper .main .bike-review .grid-rvw-item .big-bike-pic-little-img im
   html body .wrapper .main .bike-review .grid-rvw-item .grid-right {
     grid-column: 2;
     grid-row: 1;
+  }
+  html body .wrapper .main .bike-review .grid-rvw-item .grid-left {
+    height: 300px;
   }
   html body .wrapper .main .bike-review .grid-rvw-item .bike-rvw-description {
     grid-column: 1;

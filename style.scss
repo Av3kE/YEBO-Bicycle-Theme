@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 
@@ -8,17 +9,20 @@ html {
         background-color: #f7f7f7;
         font-family: "Lato", sans-serif;
         color: rgb(53, 55, 56);
+
         .wrapper {
             min-height: 100%;
             width: 100%;
             display: flex;
             flex-direction: column;
             overflow: hidden;
+
             .header {
                 width: 100%;
                 height: 100vh;
                 background: url(img/header-bg.jpg) no-repeat center center;
                 background-size: cover;
+
                 nav {
                     width: 100%;
                     display: flex;
@@ -27,6 +31,7 @@ html {
                     align-items: center;
                     padding: 3rem 0;
                     transition: 3s all;
+
                     .nav-a {
                         color: rgb(53, 55, 56);
                         margin: 0;
@@ -35,20 +40,24 @@ html {
                         font-weight: 700;
                         text-transform: uppercase;
                         letter-spacing: 3px;
+
                         img[alt="logo"] {
                             display: block;
                             margin: 0 12rem;
                             width: 100px;
                         }
+
                         &:hover {
                             color: rgb(100, 194, 158);
                             transition: color 0.3s;
                         }
+
                         &:nth-child(1)::after {
                             content: ".";
                             margin-left: 4rem;
                             margin-right: 4rem;
                         }
+
                         &:nth-child(4)::after {
                             content: ".";
                             margin-left: 4rem;
@@ -57,6 +66,7 @@ html {
                     }
                 }
             }
+
             .main {
                 width: 100%;
 
@@ -65,9 +75,11 @@ html {
                     margin: 0 auto;
                     text-align: center;
                     padding: 7% 0;
+
                     img {
                         margin-bottom: 5%;
                     }
+
                     h2 {
                         font-family: "Lato", sans-serif;
                         font-weight: bold;
@@ -77,6 +89,7 @@ html {
                         text-transform: uppercase;
                         margin-bottom: 5%;
                     }
+
                     p {
                         font-family: "Lato", sans-serif;
                         font-size: 1.6rem;
@@ -86,6 +99,7 @@ html {
                         color: #848789;
                     }
                 }
+
                 .bike-review {
                     .bike-review-item {
                         max-width: 100%;
@@ -110,6 +124,7 @@ html {
                             @media screen and (max-width: 600px) {
                                 width: 100%;
                             }
+
                             img {
                                 display: block;
                                 max-width: 100%;
@@ -121,9 +136,11 @@ html {
 
                         .bike-rvw-description-container {
                             width: 30%;
+
                             @media screen and (max-width: 1237px) {
                                 width: 50%;
                             }
+
                             @media screen and (max-width: 600px) {
                                 width: 100%;
                             }
@@ -131,9 +148,11 @@ html {
                             .big-bike-pic-little-img {
                                 height: 40%;
                                 width: 100%;
+
                                 @media screen and (max-width: 600px) {
                                     height: unset;
                                 }
+
                                 img {
                                     display: block;
                                     max-width: 100%;
@@ -143,17 +162,20 @@ html {
                                 }
                             }
                         }
+
                         .width35 {
                             width: 40%;
+
                             @media screen and (max-width: 1237px) {
                                 width: 50%;
                             }
                         }
                     }
-                    .grid-rvw-item {
-                        display: grid;
-                        grid-template-columns: repeat(3, 33.3%);
 
+                    .grid-rvw-item {
+                         display: grid;
+                         grid-template-columns: repeat(3, 33.3%);
+                       
                         .third-retro-bike {
                             width: 100%;
                             grid-row: 1 / 3;
@@ -164,38 +186,57 @@ html {
                                 height: 100%;
                                 object-fit: cover;
                             }
+
                             // @media screen and (max-width: 1237px) {
                             //     width: 50%;
                             // }
                         }
+
                         .grid-right {
                             grid-column: 3;
                         }
+
                         .bike-rvw-description {
                             padding: 7rem;
                             height: auto;
                         }
+
                         .big-bike-pic-little-img {
                             grid-column: 2;
+
                             img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
                                 max-width: 100%;
+                                object-fit: cover;
                             }
                         }
+
                         @media screen and (max-width: 1161px) {
                             grid-template-columns: repeat(2, 50%);
+
+
                             .third-retro-bike {
                                 grid-row: 2;
                                 grid-column: 1;
                             }
+
                             .grid-right {
                                 grid-column: 2;
                                 grid-row: 1;
+                                // height: 300px;
                             }
+                            .grid-left{
+height:  300px;
+                        }
+
                             .bike-rvw-description {
                                 grid-column: 1;
                             }
                         }
-                    }
+                    
+                }
                     .bike-rvw-description {
                         width: 100%;
                         height: 60%;
@@ -204,12 +245,15 @@ html {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
                         @media screen and (max-width: 1348px) {
                             padding: 7rem;
                         }
+
                         @media screen and (max-width: 826px) {
                             padding: 10%;
                         }
+
                         @media screen and (max-width: 600px) {
                             height: unset;
                         }
@@ -218,20 +262,24 @@ html {
                             margin-bottom: 10%;
                             width: 41px;
                         }
+
                         img[src="img/icon-work-3.png"] {
                             width: 21px;
                         }
+
                         h2 {
                             font-size: 2.5rem;
                             font-weight: 700;
                             letter-spacing: 2px;
                             text-transform: uppercase;
                             margin-bottom: 7%;
+
                             @media screen and (max-width: 1636px) {
                                 font-size: 2rem;
                                 letter-spacing: 1px;
                             }
                         }
+
                         p {
                             display: block;
                             font-size: 2rem;
@@ -254,6 +302,7 @@ html {
                                 font-size: 1.7rem;
                             }
                         }
+
                         hr {
                             height: 2px;
                             width: 5rem;
