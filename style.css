@@ -309,29 +309,106 @@ html body .wrapper .main .bike-review .bike-rvw-description hr {
   border: none;
   background: #000;
 }
-html body .wrapper .main .twits {
+html body .wrapper .main .twits-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
   width: 100%;
   text-align: center;
-  height: 50vh;
+  height: 70vh;
 }
-html body .wrapper .main .twits i {
+html body .wrapper .main .twits-container .twits {
+  padding: 5% 0 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+html body .wrapper .main .twits-container .twits i {
   font-size: 32px;
   color: #00aced;
 }
-html body .wrapper .main .twits i + p {
+html body .wrapper .main .twits-container .twits i + p {
   color: #353738;
+  font-size: large;
 }
-html body .wrapper .main .twits p {
-  font-size: 2em;
+html body .wrapper .main .twits-container .twits p {
+  font-size: 2.5em;
   color: #848789;
+  line-height: 2em;
+  font-style: italic;
 }
-html body .wrapper .main .twits p time {
+html body .wrapper .main .twits-container .twits p time {
   color: #848789;
+  font-style: italic;
 }
-html body .wrapper .main .twits div > button {
+@media all and (max-width: 600px) {
+  html body .wrapper .main .twits-container .twits p {
+    line-height: 1em;
+  }
+}
+html body .wrapper .main .twits-container .twits p:last-of-type {
+  padding-bottom: 7%;
+}
+html body .wrapper .main .twits-container .twits div {
+  width: 100%;
+}
+html body .wrapper .main .twits-container .twits div button {
   border-radius: 50%;
+  width: 10px;
+  height: 15px;
+  margin-right: 5px;
+  border: 1px solid #848789;
+  display: inline-block;
+}
+html body .wrapper .main .twits-container .twits div button:active {
+  background-color: #848789;
+}
+html body .wrapper .main .twits-container .twits div button:focus {
+  background-color: #848789;
+  border: 1px solid #848789;
+}
+html body .wrapper .main .shop-now-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, minmax(150px, 1fr));
+}
+html body .wrapper .main .shop-now-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .wrapper .main .shop-now-container img[alt=black-brooks-seddle] {
+  grid-column: 1;
+  grid-row: 1;
+}
+html body .wrapper .main .shop-now-container img[alt=a-lot-of-seddles] {
+  grid-column: 2;
+  grid-row: 1;
+}
+html body .wrapper .main .shop-now-container img[alt=second-black-brooks-seddle] {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+html body .wrapper .main .shop-now-container img[alt=bike-back-view] {
+  grid-column: 3;
+  grid-row: span 2;
+}
+html body .wrapper .main .shop-now-container img[alt=bike-side-view] {
+  grid-column: 4;
+  grid-row: span 2;
+}
+html body .wrapper .main .shop-now-container img[alt=photo-of-the-shop] {
+  grid-column: 5/7;
+  grid-row: 1;
+}
+html body .wrapper .main .shop-now-container img[alt=brown-leather-seddle] {
+  grid-column: 5;
+  grid-row: 2;
+}
+html body .wrapper .main .shop-now-container img[alt=black-jean-bag] {
+  grid-column: 6;
+  grid-row: 2;
 }/*# sourceMappingURL=style.css.map */
