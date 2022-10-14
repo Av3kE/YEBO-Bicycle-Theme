@@ -6,7 +6,7 @@ html {
   font-size: 62.5%;
 }
 html body {
-  background-color: #f7f7f7;
+  background: #fff;
   font-family: "Lato", sans-serif;
   color: rgb(53, 55, 56);
 }
@@ -32,6 +32,13 @@ html body .wrapper .header nav {
   padding: 3rem 0;
   transition: 3s all;
 }
+@media all and (max-width: 700px) {
+  html body .wrapper .header nav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20%, 1fr));
+    grid-template-rows: repeat(2, minmax(50%, 1fr));
+  }
+}
 html body .wrapper .header nav .nav-a {
   color: rgb(53, 55, 56);
   margin: 0;
@@ -44,7 +51,17 @@ html body .wrapper .header nav .nav-a {
 html body .wrapper .header nav .nav-a img[alt=logo] {
   display: block;
   margin: 0 12rem;
-  width: 100px;
+  max-width: 100%;
+}
+@media all and (max-width: 900px) {
+  html body .wrapper .header nav .nav-a img[alt=logo] {
+    margin: 0 5rem;
+  }
+}
+@media all and (max-width: 700px) {
+  html body .wrapper .header nav .nav-a img[alt=logo] {
+    margin: 0;
+  }
 }
 html body .wrapper .header nav .nav-a:hover {
   color: rgb(100, 194, 158);
@@ -60,19 +77,59 @@ html body .wrapper .header nav .nav-a:nth-child(4)::after {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+@media all and (max-width: 700px) {
+  html body .wrapper .header nav .nav-a {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(1)::after {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(4)::after {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(1) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(4) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  html body .wrapper .header nav .nav-a:nth-child(5) {
+    grid-column: 5;
+    grid-row: 2;
+  }
+}
 html body .wrapper .main {
   width: 100%;
 }
-html body .wrapper .main .new-generation-vbike {
+html body .wrapper .main .new-generation-vbike-container {
+  background: #f7f7f7;
+}
+html body .wrapper .main .new-generation-vbike-container .new-generation-vbike {
   width: 75%;
   margin: 0 auto;
   text-align: center;
   padding: 7% 0;
 }
-html body .wrapper .main .new-generation-vbike img {
+html body .wrapper .main .new-generation-vbike-container .new-generation-vbike img {
   margin-bottom: 5%;
 }
-html body .wrapper .main .new-generation-vbike h2 {
+html body .wrapper .main .new-generation-vbike-container .new-generation-vbike h2 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 2.2rem;
@@ -81,7 +138,7 @@ html body .wrapper .main .new-generation-vbike h2 {
   text-transform: uppercase;
   margin-bottom: 5%;
 }
-html body .wrapper .main .new-generation-vbike p {
+html body .wrapper .main .new-generation-vbike-container .new-generation-vbike p {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -604,6 +661,7 @@ html body .wrapper .main .discover-button button {
   height: 30%;
   border: 2px white solid;
   background: inherit;
+  cursor: pointer;
 }
 html body .wrapper .main .discover-button button:hover {
   background: #64c29e;
@@ -647,7 +705,15 @@ html body .wrapper .main .email-form-container h2 {
 html body .wrapper .main .email-form-container form {
   width: 100%;
 }
+@media all and (max-width: 450px) {
+  html body .wrapper .main .email-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 html body .wrapper .main .email-form-container form input {
+  font-size: 1.7em;
   font-style: italic;
   margin-right: 5px;
   width: 70%;
@@ -655,6 +721,12 @@ html body .wrapper .main .email-form-container form input {
   padding-left: 20px;
   opacity: 0.7;
   border: 1px solid rgba(132, 135, 137, 0.5);
+}
+@media all and (max-width: 450px) {
+  html body .wrapper .main .email-form-container form input {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 html body .wrapper .main .email-form-container form input:focus {
   border: 1px solid yellow;
@@ -666,5 +738,69 @@ html body .wrapper .main .email-form-container form button {
   color: white;
   height: 100%;
   font-size: 1.5em;
+  cursor: pointer;
   font-weight: 400;
+}
+html body .wrapper footer {
+  background: #f7f7f7;
+  width: 100%;
+}
+html body .wrapper footer .footer-items-container {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10% 0;
+}
+@media all and (max-width: 1024px) {
+  html body .wrapper footer .footer-items-container {
+    width: 95%;
+  }
+}
+@media all and (max-width: 768px) {
+  html body .wrapper footer .footer-items-container {
+    flex-direction: column;
+  }
+}
+html body .wrapper footer .footer-items-container .footer-item {
+  font-size: 1.7em;
+  color: #848789;
+}
+@media all and (max-width: 768px) {
+  html body .wrapper footer .footer-items-container .footer-item {
+    margin-bottom: 5%;
+  }
+}
+html body .wrapper footer .footer-items-container .footer-item:last-child {
+  display: flex;
+  flex-direction: row;
+}
+html body .wrapper footer .footer-items-container .footer-item:last-child img {
+  margin-left: 10px;
+}
+html body .wrapper footer .footer-items-container .footer-item p {
+  line-height: 2em;
+}
+html body .wrapper footer .footer-items-container .footer-item p strong {
+  font-weight: bold;
+}
+@media all and (max-width: 768px) {
+  html body .wrapper footer .footer-items-container .footer-item p {
+    text-align: center;
+  }
+}
+html body .wrapper footer .footer-items-container .footer-item i {
+  font-size: 2.5em;
+  margin-right: 10px;
+}
+html body .wrapper footer .footer-items-container .footer-item .pin-color {
+  color: #cb2027;
+}
+html body .wrapper footer .footer-items-container .footer-item .twitter-color {
+  color: #00aced;
+}
+html body .wrapper footer .footer-items-container .footer-item .facebook-color {
+  color: #3b5998;
 }/*# sourceMappingURL=style.css.map */
