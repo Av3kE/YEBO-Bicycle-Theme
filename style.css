@@ -5,6 +5,11 @@
 html {
   font-size: 62.5%;
 }
+@media all and (min-width: 2100px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
 html body {
   background: #fff;
   font-family: "Lato", sans-serif;
@@ -52,6 +57,11 @@ html body .wrapper .header nav .nav-a img[alt=logo] {
   display: block;
   margin: 0 12rem;
   max-width: 100%;
+}
+@media all and (min-width: 2100px) {
+  html body .wrapper .header nav .nav-a img[alt=logo] {
+    width: 200px;
+  }
 }
 @media all and (max-width: 900px) {
   html body .wrapper .header nav .nav-a img[alt=logo] {
@@ -146,6 +156,11 @@ html body .wrapper .main .new-generation-vbike-container .new-generation-vbike p
   letter-spacing: 0.2px;
   color: #848789;
 }
+@media all and (min-width: 2100px) {
+  html body .wrapper .main .icon {
+    transform: scale(1.5);
+  }
+}
 html body .wrapper .main .bike-review .bike-review-item {
   max-width: 100%;
   width: 100%;
@@ -199,6 +214,17 @@ html body .wrapper .main .bike-review .bike-review-item .bike-rvw-description-co
 }
 @media screen and (max-width: 1348px) {
   html body .wrapper .main .bike-review .bike-review-item .bike-rvw-description-container .little-bike-pic-img {
+    height: unset;
+  }
+}
+@media screen and (min-width: 1855px) {
+  html body .wrapper .main .bike-review .bike-review-item .bike-rvw-description-container .little-bike-pic-img {
+    min-height: 40%;
+  }
+}
+@media screen and (min-width: 2100px) {
+  html body .wrapper .main .bike-review .bike-review-item .bike-rvw-description-container .little-bike-pic-img {
+    min-height: unset;
     height: unset;
   }
 }
@@ -381,19 +407,44 @@ html body .wrapper .main .twits-container .twits {
   align-items: center;
   margin: 0 auto;
 }
+@media all and (min-width: 1855px) {
+  html body .wrapper .main .twits-container .twits {
+    padding: 0;
+  }
+}
 html body .wrapper .main .twits-container .twits i {
   font-size: 32px;
   color: #00aced;
 }
+@media all and (min-width: 1440px) {
+  html body .wrapper .main .twits-container .twits i {
+    font-size: 4rem;
+  }
+}
+@media all and (min-width: 1855px) {
+  html body .wrapper .main .twits-container .twits i {
+    font-size: 7rem;
+  }
+}
 html body .wrapper .main .twits-container .twits i + p {
   color: #353738;
   font-size: large;
+}
+@media all and (min-width: 1440px) {
+  html body .wrapper .main .twits-container .twits i + p {
+    font-size: 3rem;
+  }
 }
 html body .wrapper .main .twits-container .twits p {
   font-size: 2.5em;
   color: #848789;
   line-height: 2em;
   font-style: italic;
+}
+@media all and (min-width: 1440px) {
+  html body .wrapper .main .twits-container .twits p {
+    font-size: 3rem;
+  }
 }
 html body .wrapper .main .twits-container .twits p time {
   color: #848789;
@@ -417,6 +468,12 @@ html body .wrapper .main .twits-container .twits div button {
   margin-right: 5px;
   border: 1px solid #848789;
   display: inline-block;
+}
+@media all and (min-width: 1855px) {
+  html body .wrapper .main .twits-container .twits div button {
+    width: 30px;
+    height: 30px;
+  }
 }
 html body .wrapper .main .twits-container .twits div button:active {
   background-color: #848789;
@@ -670,6 +727,11 @@ html body .wrapper .main .discover-button button:hover {
 @media all and (max-width: 800px) {
   html body .wrapper .main .discover-button button {
     width: 70%;
+  }
+}
+@media all and (min-width: 1440px) {
+  html body .wrapper .main .discover-button button {
+    height: unset;
   }
 }
 html body .wrapper .main .email-form-container {
